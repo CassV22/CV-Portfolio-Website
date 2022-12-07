@@ -1,0 +1,58 @@
+body {
+    font-family: 'Atma', cursive;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container1{
+    height: 100vh;
+    background-color: #F9E5FC;
+    
+}
+
+.navigation{
+    display: flex;
+    position: absolute; 
+    top: 0;
+    right: 50px;
+    font-size: 12px;
+    align-items: center;
+    height: 100%;
+    
+}
+    
+.navigation a {
+    padding: 30px;
+}
+
+.material-symbols-outlined{
+    font-size: 40px;
+}
+
+#header {
+    display: flex;    
+    position: relative;
+}
+
+#name {
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.category_img{
+    height: 150px;
+    width: 150x;
+    border: solid 1px;
+    
+}
+
+.categories {
+    display: flex;
+}
+
+.main_img {
+    height: 450px;
+    width: 450px;  
+   
+}
+

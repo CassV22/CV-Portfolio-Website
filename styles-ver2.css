@@ -1,0 +1,576 @@
+/********General/main stylings; links, body, and nav-bar**********/
+body {
+    font-family: 'Atma', cursive;
+    margin: 0;
+    overflow-x: hidden;    
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #054BFF;
+}
+
+.disabled_link {
+    pointer-events: none;
+    color: #000;
+    font-weight: bold;
+}
+
+ #nav_bar a:hover {
+    text-decoration: underline;
+}
+
+
+/**Container for first section(purple)**/
+.container1{
+    height: 100vh;
+    background-color: #F9E5FC; 
+    position: relative;  
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/***Formatting for navigation bar***/
+.navigation {
+    display: flex;
+    align-items: center;   
+    justify-content: right; 
+    padding-right: 50px;
+    padding-top: 15px;
+    grid-column-start: 2;
+    grid-row-end: 2;
+}
+
+/***Formatting for navigation bar -  links/section positions***/
+#name {
+    margin-top: 0;
+    margin-left: 30px;
+    font-size: 50px;
+    padding-top: 10px;   
+    grid-row: 1 / span 2;
+    margin-bottom: 0;
+    color: #002687;
+}
+
+/***Formatting for navigation bar - text***/
+.nav_header {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -25px;
+}
+
+/**Formatting for home button**/
+.material-symbols-outlined{
+    font-size: 35px;
+    margin-top: -25px;
+    margin-right: 30px;
+}
+
+/***Sizing for 3 images***/
+.category_img {
+    height: 175px;
+    width: 175px;   
+}
+
+
+/**Formatting for central image**/
+.main_img {
+    height: 375px;
+    width: 400px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-left: 18%;   
+    position: absolute;
+    bottom: -28px;
+    left: 18%;
+       
+}
+
+.probSolv_img {
+    grid-row-start: 2;
+    margin-left: 100px;
+    padding-left: 50px;
+}
+
+/***Animations for 3 images**/
+.probSolv_img:hover, .research_img:hover, .innovate_img:hover {
+    animation: pop 0.7s linear 1;
+}
+
+@keyframes pop {
+    50% {transform: scale(1.5);}
+}
+
+.research_img {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    padding-left: 80px;
+}
+
+.innovate_img {
+    grid-column-start: 2;
+    margin-left: 25%;
+    
+}
+
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    
+}
+
+/****Formatting for text with images****/
+.category_img_cap{
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #0743DC;
+}
+
+
+/*********************2nd half of page starts here************************************/
+.container2{
+    display: flex;
+    background-color: #E5F1FC;
+    height: 95vh;
+}
+
+.ux_img, .webDev_img, .other_img {
+    height: 250px;
+    width: 250px;
+    
+}
+
+.ux_portfolio, .webDev_portfolio, .other_portfolio {
+    flex: 1;
+    margin-top: 10%;
+    margin-left: 3%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+/****Animations for portfolio image links*****/
+a:hover .ux_portfolio, a:hover .webDev_portfolio, a:hover .other_portfolio {
+    transform: scale(1.2);
+}
+
+#footer {
+    display: flex;
+    background-color: #E5F1FC;
+    justify-content: right;
+    padding-right: 70px;
+    font-size: 15px;
+}
+
+
+/*************************************Homepage Styling Ends******************************/
+
+/**********************************Resume Page Styling Starts****************************/
+body#resume_page{
+    background-color: #E5F1FC;
+}
+
+hr {
+    border-top: 6px dotted #095484;
+    width: 75%;
+}
+
+
+.resume_img {
+    height: 225px;
+    width: 180px;
+    margin-left: 75px;
+    margin-right: 70px;
+}
+
+.resume_mainHead {
+    text-align: center;
+    font-size: 50px;
+}
+
+.resume_skills, .resume_exp {
+    font-size: 40px;
+    font-weight: 650;
+}
+
+
+.grid-education {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.grid-education2 {
+    flex-direction: row;
+    text-align: center;    
+}
+
+.grid-education2 h2 {
+    font-size: 28px;
+}
+
+.education {
+    font-size: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.resume_skills {
+    margin: 0;
+}
+
+.software_skills {
+    width: 50vw;
+    margin-left: -20px;
+}
+
+.software_skills ul {
+    margin-left: -50px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.soft_skills {
+    margin-left: -100px;
+}
+
+.soft_skills ul {
+    margin-left: -50px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.skills h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.experience_head{
+    margin: 0;
+}
+
+.experiences {
+    margin-left: 75px;
+    font-size: 20px;
+}
+
+.resume_link {
+    text-align: center;
+    font-size: 20px;
+}
+
+.resume_link:hover {
+    text-decoration: underline;
+}
+
+/**********************************Resume Page Styling Ends****************************/
+
+/**********************************UX Page Styling Starts****************************/
+body#ux_page, body#webDev_page, body#other_page {
+    position: relative;
+    background-color: #E5F1FC;
+}
+
+#close {
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    color: #000;
+}
+
+.ux-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 15px;
+    text-align: center;
+    justify-content: left;
+    width: 100vw;
+    margin: 0;
+            
+}
+
+.ux_portfolio_imgs {
+    height: 250px;
+    width: 250px;
+}
+
+.greener_together{    
+    margin-top: 30px;
+    margin-right: 80px;
+    margin-bottom: 45px;
+    margin-left: 125px;
+}
+
+a .greener_together, a .caribbean_grille {
+    padding-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.greener_together:hover, .caribbean_grille:hover {
+    transform: scale(1.2);
+}
+
+.caribbean_grille, .random_fact {
+    margin-top: 30px;
+    margin-right: 80px;
+
+}
+
+
+.library_home, .online_calendar {
+    margin-top: 30px;
+}
+
+.coming_soonL {
+    height: 170px;
+    width: 75vw;
+    margin-left: 12%;
+}
+
+/**********************************UX Page Styling Ends****************************/
+
+/*********************************WebDev Page Styling Starts****************************/
+
+.web_portfolio_imgs {
+    width: 300px;
+    height: 260px;
+    
+}
+
+a .the_daily, a .random_fact, a .online_calendar {
+    padding-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.the_daily:hover, .random_fact:hover, .online_calendar:hover {
+    transform: scale(1.2);
+}
+
+.the_daily {
+    margin-top: 30px;
+    margin-right: 80px;
+    margin-bottom: 45px;
+    margin-left: 105px;
+}
+
+.the_daily h1, .online_calendar h1{
+    padding-bottom: 48px;
+}
+
+/*********************************WebDev Page Styling Ends****************************/
+
+/*********************************The Daily Page Styling Starts****************************/
+body.theDaily_page, body.randomFact_page, body.calendar_page {
+    position: relative;
+    background-color: #E5F1FC;
+}
+
+.theDaily_title, .randomFact_title, .calendar_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#back {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.back_btn, .back_btn a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back_text {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.theDaily_imgs, .randFact_imgs, .calendar_imgs{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50vw;
+}
+
+.daily_img, .randFact_img, .calendar_img {
+    height: 200px;
+    width: 300px;   
+    margin-bottom: 10px; 
+    border: 1px solid;   
+}
+
+.daily_imgA, .daily_imgC, .randFact_imgA, .randFact_imgC, .calendar_imgA, .calendar_imgC {
+    margin-left: 25px;
+}
+
+.dailySec1, .rand_sec1, .calendar_sec1 {
+    display: flex;
+}
+
+.dailyPara1 {
+    position: absolute;
+    right: 30px;
+    top: 275px;    
+    font-size: 20px;
+}
+
+.theDaily_original {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.theDaily_original p {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.dailyOriginal_img, .dailyRedo_img {
+    width: 600px;
+    height: 350px;
+}
+
+.theDaily_v2 {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+
+.theDaily_v2 p {
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.daily_walkthru {
+    position: absolute;
+    left: 15%;
+    padding-bottom: 40px;
+    border: 0;  
+}
+
+.daily_link1, .daily_link2 {
+   position: absolute;  
+   margin-left: 20px; 
+
+}
+
+.daily_link1{
+    margin-top: 525px;
+}
+
+.daily_link2{
+    margin-top: 600px;
+    padding-bottom: 30px;
+}
+
+/*********************************The Daily Page Styling Ends****************************/
+
+/*********************************Random Fact Page Styling Starts****************************/
+.randPara1 {
+    position: absolute;
+    right: 40px;
+    top: 450px;    
+    font-size: 20px;
+}
+
+.random_walkthru {
+    margin-top: 50px;
+    margin-left: 14%;
+    margin-bottom: 30px;
+}
+
+.randFact_link, .calendar_link {
+    margin-left: 20px;
+}
+
+/*********************************Random Fact Page Styling Ends****************************/
+
+/*********************************Calendar Page Styling Starts****************************/
+.calPara1 {
+    position: absolute;
+    right: 100px;
+    top: 325px;    
+    font-size: 20px;
+}
+
+.mainCal_img {
+    width: 750px;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+/*********************************Calendar Page Styling Ends****************************/
+
+/*********************************Other Page Styling Starts****************************/
+.other-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 15px;
+    text-align: center;
+    justify-content: left;    
+    width: 100vw;
+    margin-bottom: 45px;
+            
+}
+
+.seniorDesign_img, .climateAction_img {
+    height: 250px;
+    width: 250px;
+}
+
+.climate_action {
+    position: absolute;
+    right: 425px;
+    top: 30px;
+}
+
+.senior_design {
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+/*********************************Other Page Styling Ends****************************/
+
+/*********************************About Page Styling Starts****************************/
+#about {
+    background-color: #EEE5FC;
+    position: relative;
+}
+
+ .about_title {
+    text-align: center;
+}
+
+.logo{
+    width: 500px;
+    height: 500px;
+}
+
+.img-container{
+    margin-left: 30%;
+    
+}
+
+.logo {
+    width: 450px;
+    height: 450px;
+    margin-left: 2%;
+}
+
+/*********************************About Page Styling Ends****************************/
